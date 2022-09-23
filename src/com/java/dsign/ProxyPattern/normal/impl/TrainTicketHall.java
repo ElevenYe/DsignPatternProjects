@@ -4,6 +4,7 @@ import com.java.dsign.ProxyPattern.normal.iinterface.BuyTrainTickets;
 
 /**
  * 官方购买车票渠道，火车站售票大厅购买
+ * 假设该类为12306提供的SDK，不能被修改
  */
 public class TrainTicketHall implements BuyTrainTickets {
     @Override

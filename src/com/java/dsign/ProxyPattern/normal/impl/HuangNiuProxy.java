@@ -21,6 +21,7 @@ public class HuangNiuProxy implements BuyTrainTickets {
 
     @Override
     public void buyTickets() {
+        System.out.println("排队中。。。");
         buyTrainTickets.buyTickets();
     }
 
