@@ -1,6 +1,6 @@
-package com.java.dsign.FactoryPattern.SimpleFactory.impl;
+package com.java.dsign.FactoryPattern.simpleFactory.impl;
 
-import com.java.dsign.FactoryPattern.SimpleFactory.iiterface.CarInterface;
+import com.java.dsign.FactoryPattern.simpleFactory.iiterface.CarInterface;
 
 public class BenzService implements CarInterface {
     @Override

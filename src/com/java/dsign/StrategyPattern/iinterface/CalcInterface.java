@@ -5,6 +5,6 @@ package com.java.dsign.StrategyPattern.iinterface;
  */
 public interface CalcInterface {
 
-    public void draft(int a, int b);
-    public void calc(int a, int b);
+    void draft(int a, int b);
+    void calc(int a, int b);
 }

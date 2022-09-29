@@ -1,7 +1,7 @@
-package com.java.dsign.FactoryPattern.SimpleFactory;
+package com.java.dsign.FactoryPattern.simpleFactory;
 
-import com.java.dsign.FactoryPattern.SimpleFactory.impl.BenzService;
-import com.java.dsign.FactoryPattern.SimpleFactory.impl.CarFactory;
+import com.java.dsign.FactoryPattern.simpleFactory.impl.BenzService;
+import com.java.dsign.FactoryPattern.simpleFactory.impl.CarFactory;
 
 /**
  * <pre>
