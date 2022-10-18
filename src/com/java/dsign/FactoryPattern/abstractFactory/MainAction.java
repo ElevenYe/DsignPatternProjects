@@ -1,10 +1,10 @@
 package com.java.dsign.FactoryPattern.abstractFactory;
 
-import com.java.dsign.FactoryPattern.abstractFactory.factory.AbstractCar;
-import com.java.dsign.FactoryPattern.abstractFactory.factory.CarBrandFactory;
-import com.java.dsign.FactoryPattern.abstractFactory.factory.CarFactory;
-import com.java.dsign.FactoryPattern.abstractFactory.iiterface.CarBrandInterface;
-import com.java.dsign.FactoryPattern.abstractFactory.iiterface.CarColorInterface;
+import com.java.dsign.FactoryPattern.abstractFactory.factory.AudiFactory;
+import com.java.dsign.FactoryPattern.abstractFactory.factory.BenzFactory;
+import com.java.dsign.FactoryPattern.abstractFactory.iiterface.CarFactoryInterface;
+import com.java.dsign.FactoryPattern.abstractFactory.iiterface.EngineInterface;
+import com.java.dsign.FactoryPattern.abstractFactory.iiterface.FrameInterface;
 
 /**
  * 抽象工厂模式
@@ -14,13 +14,14 @@ import com.java.dsign.FactoryPattern.abstractFactory.iiterface.CarColorInterface
  */
 public class MainAction {
     public static void main(String[] args) {
-        CarFactory carFactory = new CarFactory();
-        AbstractCar abstractCar = carFactory.getCarBean("Brand");
-        CarBrandInterface carBrand = abstractCar.getCarBrandBean("Benz");
-        carBrand.brandDesc();
+        CarFactoryInterface audiFactory = new AudiFactory();
+        EngineInterface audiEngine = audiFactory.createEngine("LOW-END");
+        audiEngine.create();
 
-        abstractCar = carFactory.getCarBean("Color");
-        CarColorInterface carColor = abstractCar.getCarColorBean("Red");
-        carColor.colorDesc();
+        System.out.println();
+
+        CarFactoryInterface benzFactory = new BenzFactory();
+        FrameInterface benzFrame = benzFactory.createFrame("FLAGSHIP");
+        benzFrame.create();
     }
 }
