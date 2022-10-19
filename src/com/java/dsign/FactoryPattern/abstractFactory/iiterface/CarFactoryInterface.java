@@ -1,7 +1,7 @@
 package com.java.dsign.FactoryPattern.abstractFactory.iiterface;
 
 /**
- * 汽车工厂接口
+ * 汽车抽象工厂
  */
 public interface CarFactoryInterface {
 
