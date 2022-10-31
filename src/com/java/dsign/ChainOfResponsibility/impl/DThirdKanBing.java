@@ -1,7 +1,7 @@
 package com.java.dsign.ChainOfResponsibility.impl;
 
 /**
- * 第三步看病
+ * 具体的处理类 - 第三步看病
  */
 public class DThirdKanBing extends AbsHandler {
 

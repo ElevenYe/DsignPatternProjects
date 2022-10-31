@@ -1,7 +1,7 @@
 package com.java.dsign.ChainOfResponsibility.impl;
 
 /**
- * 第一步挂号
+ * 具体的处理类 - 第一步挂号
  */
 public class BFirstGuaHao extends AbsHandler {
 

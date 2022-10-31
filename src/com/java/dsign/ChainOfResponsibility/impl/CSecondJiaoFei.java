@@ -3,7 +3,7 @@ package com.java.dsign.ChainOfResponsibility.impl;
 import org.omg.CORBA.PUBLIC_MEMBER;
 
 /**
- * 第二步缴费
+ * 具体的处理类 - 第二步缴费
  */
 public class CSecondJiaoFei extends AbsHandler {
 

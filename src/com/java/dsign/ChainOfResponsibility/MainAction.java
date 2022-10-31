@@ -8,7 +8,12 @@ import com.java.dsign.ChainOfResponsibility.impl.DThirdKanBing;
 /**
  * 责任链模式
  * 适用于没有特殊业务处理，上下级关系十分紧密，层次分明的场景。
- * 例如：审批流程
+ *
+ * 角色：
+ * 抽象的处理类：保存了下一个节点的类，负责将对应的实现类串联起来形成一条责任链，自上而下进行传递
+ * 具体的处理类：继承抽象类，业务的具体实现
+ *
+ * 使用场景：审批流程
  */
 public class MainAction extends AbsHandler {
 

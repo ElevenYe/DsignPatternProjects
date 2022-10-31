@@ -1,7 +1,7 @@
 package com.java.dsign.ChainOfResponsibility.impl;
 
 /**
- * 处理器
+ * 抽象的处理类 - 处理器
  */
 public abstract class AbsHandler {
 
